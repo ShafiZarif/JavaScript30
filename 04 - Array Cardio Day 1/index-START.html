@@ -112,7 +112,7 @@
         const lastPerson = a.passed - a.year;
         const newPerson = b.passed - b.year;
 
-        return lastPerson > newPerson ? -1 : 1;
+        return newPerson - lastPerson;
       });
 
       console.table(oldest);

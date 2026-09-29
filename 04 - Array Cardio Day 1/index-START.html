@@ -154,6 +154,17 @@
         'car',
         'truck',
       ];
+
+      const numberOfAppearance = data.reduce((final, item) => {
+        if (final[item] == null) {
+          final[item] = 1;
+        } else {
+          final[item]++;
+        }
+        return final;
+      }, {});
+
+      console.log(numberOfAppearance);
     </script>
   </body>
 </html>
